@@ -1,0 +1,4 @@
+#!/bin/sh
+data="$(mktemp -d /tmp/chtmp-XXXXXX)"
+cache="$(mktemp -d /tmp/chtmp-XXXXXX)"
+open -a Chromium --args --user-data-dir="$data" --disk-cache-dir="$cache" &
